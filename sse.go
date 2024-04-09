@@ -213,6 +213,7 @@ func (mi *sse) open(ctx context.Context, state *lib.State,
 	req.Header.Set("Cache-Control", "no-cache")
 	req.Header.Set("Accept", "text/event-stream")
 	req.Header.Set("Connection", "keep-alive")
+	req.Header.Set("Content-Type", "application/json")
 
 	// Wrap the request to retrieve the server IP tag
 	trace := &httptrace.ClientTrace{
