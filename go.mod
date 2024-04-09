@@ -1,4 +1,4 @@
-module github.com/phymbert/xk6-sse
+module github.com/xliangwu/xk6-sse
 
 go 1.21
 
